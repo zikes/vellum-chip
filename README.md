@@ -2,6 +2,8 @@
 
 Chip elements designed to match http://www.google.com/design/spec/components/chips.html
 
+### [Demo](http://polymer.zikes.me/zikes-chip.html)
+
 Examples:
 
     <link rel="import" href="path/to/iron-icons/iron-icons.html">
