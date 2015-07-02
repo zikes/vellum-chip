@@ -1,6 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 
-<link rel="import" href="zikes-chip.html">
+<link rel="import" href="vellum-chip.html">
 
 <!--
 Chip elements designed to match http://www.google.com/design/spec/components/chips.html
@@ -9,35 +9,35 @@ Example:
 
     <link rel="import" href="path/to/iron-icons/iron-icons.html">
 
-    <zikes-chiplist>
-      <zikes-chip value="123">Contents</zikes-chip>
-      <zikes-chip icon="room" value="1234">1234 - Somewhere, ST</zikes-chip>
-      <zikes-chip icon="assessment" value="123456">Scan 123456</zikes-chip>
-    </zikes-chiplist>
+    <vellum-chiplist>
+      <vellum-chip value="123">Contents</vellum-chip>
+      <vellum-chip icon="room" value="1234">1234 - Somewhere, ST</vellum-chip>
+      <vellum-chip icon="assessment" value="123456">Scan 123456</vellum-chip>
+    </vellum-chiplist>
 
 @demo demo/index.html
 -->
-<dom-module id="zikes-chiplist">
+<dom-module id="vellum-chiplist">
   <style>
     :host {
       display: flex;
       flex-wrap: wrap;
     }
-    zikes-chip {
+    vellum-chip {
       margin: 0 3px 3px 0;
     }
   </style>
 
   <template>
     <template is="dom-repeat" items="{{data}}" as="chip">
-      <zikes-chip elevation="{{elevation}}" icon="{{chip.icon}}" src="{{chip.src}}" value="{{chip.value}}">{{chip.text}}</zikes-chip>
+      <vellum-chip elevation="{{elevation}}" icon="{{chip.icon}}" src="{{chip.src}}" value="{{chip.value}}">{{chip.text}}</vellum-chip>
     </template>
     <content></content>
   </template>
 
   <script>
     Polymer({
-      is: 'zikes-chiplist',
+      is: 'vellum-chiplist',
 
       properties: {
         /**
@@ -62,7 +62,7 @@ Example:
        * Return an Array of all chip values.
        */
       get values() {
-        return Polymer.dom(this.root).querySelectorAll('zikes-chip').map(function(el){return el.value});
+        return Polymer.dom(this.root).querySelectorAll('vellum-chip').map(function(el){return el.value});
       }
     });
   </script>

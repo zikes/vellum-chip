@@ -12,10 +12,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-    <title>zikes-chip Demo</title>
+    <title>vellum-chip Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../zikes-chip.html">
-    <link rel="import" href="../zikes-chiplist.html">
+    <link rel="import" href="../vellum-chip.html">
+    <link rel="import" href="../vellum-chiplist.html">
     <link rel="import" href="../../iron-icons/iron-icons.html">
     <link rel="import" href="../../iron-icons/social-icons.html">
     <style>
@@ -31,7 +31,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         border-radius: 6px;
         border: 1px solid #ddd;
       }
-      zikes-chip {
+      vellum-chip {
         margin-right: 3px;
       }
       #textbox {
@@ -49,23 +49,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <body>
     <h3>No Elevation</h3>
     <div class="box">
-      <zikes-chip icon="room" value="4972">4972 - Port Saint Lucie, FL</zikes-chip>
-      <zikes-chip icon="assessment" value="12345">Scan 12345</zikes-chip>
-      <zikes-chip>Lorem Ipsum Dolor Sit Amet Adipiscing Elit</zikes-chip>
-      <zikes-chip src="http://placekitten.com/g/32/32">Lorem Kitty Purr Sit Amet</zikes-chip>
-      <zikes-chip icon="social:person">Jason Hutchinson</zikes-chip>
+      <vellum-chip icon="room" value="4972">4972 - Port Saint Lucie, FL</vellum-chip>
+      <vellum-chip icon="assessment" value="12345">Scan 12345</vellum-chip>
+      <vellum-chip>Lorem Ipsum Dolor Sit Amet Adipiscing Elit</vellum-chip>
+      <vellum-chip src="http://placekitten.com/g/32/32">Lorem Kitty Purr Sit Amet</vellum-chip>
+      <vellum-chip icon="social:person">Jason Hutchinson</vellum-chip>
     </div>
     <h3>Elevation 1</h3>
     <div class="box">
-      <zikes-chip elevation="1" icon="room" value="4972">4972 - Port Saint Lucie, FL</zikes-chip>
-      <zikes-chip elevation="1" icon="assessment" value="12345">Scan 12345</zikes-chip>
-      <zikes-chip elevation="1">Lorem Ipsum Dolor Sit Amet Adipiscing Elit</zikes-chip>
-      <zikes-chip elevation="1" src="http://placekitten.com/g/32/32">Lorem Kitty Purr Sit Amet</zikes-chip>
-      <zikes-chip elevation="1" icon="social:person">Jason Hutchinson</zikes-chip>
+      <vellum-chip elevation="1" icon="room" value="4972">4972 - Port Saint Lucie, FL</vellum-chip>
+      <vellum-chip elevation="1" icon="assessment" value="12345">Scan 12345</vellum-chip>
+      <vellum-chip elevation="1">Lorem Ipsum Dolor Sit Amet Adipiscing Elit</vellum-chip>
+      <vellum-chip elevation="1" src="http://placekitten.com/g/32/32">Lorem Kitty Purr Sit Amet</vellum-chip>
+      <vellum-chip elevation="1" icon="social:person">Jason Hutchinson</vellum-chip>
     </div>
     <h3>Chiplist</h3>
     <div class="box">
-      <zikes-chiplist id="chiplist" data='[
+      <vellum-chiplist id="chiplist" data='[
         {"value":4972,"text":"4972 - Port Saint Lucie, FL","icon":"room"},
         {"value":12345,"text":"Scan 12345","icon":"assessment"},
         {"value":"lorem","text":"Lorem Ipsum Dolor Sit Amet Adipiscing Elit"},
@@ -73,7 +73,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         {"value":"j0hutch","text":"Jason Hutchinson","icon":"social:person"}
       ]'>
         <input type="text" id="textbox">
-      </zikes-chiplist>
+      </vellum-chiplist>
     </div>
   </body>
 </html>
