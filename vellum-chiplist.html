@@ -32,7 +32,7 @@ Example:
     <template is="dom-repeat" items="{{data}}" as="chip">
       <vellum-chip elevation="{{elevation}}" icon="{{chip.icon}}" src="{{chip.src}}" value="{{chip.value}}">{{chip.text}}</vellum-chip>
     </template>
-    <content></content>
+    <slot></slot>
   </template>
 
   <script>
