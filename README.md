@@ -2,7 +2,7 @@
 
 Chip elements designed to match http://www.google.com/design/spec/components/chips.html
 
-### [Demo](http://polymer.zikes.me/vellum-chip.html)
+### [Demo](http://vellum-chip.polymer.zikes.me/demo/)
 
 Examples:
 
